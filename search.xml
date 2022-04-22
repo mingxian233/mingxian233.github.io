@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>hexo静态博客添加rss订阅源</title>
+      <link href="/2022/04/22/rss-2022-4-22/"/>
+      <url>/2022/04/22/rss-2022-4-22/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>初建静态博客，我想着安排一个rss订阅源，于是就有了这篇文章。</p><p>大多数的hexo主题都用到了<code>hexo-generator-feed</code>插件（<font color=#008000 >指自带主题landscape都有集成</font>）</p><p>那么接下来就介绍rss订阅源的安装。</p><h2 id="安装-hexo-generator-feed-插件"><a href="#安装-hexo-generator-feed-插件" class="headerlink" title="安装 hexo-generator-feed 插件"></a>安装 <code>hexo-generator-feed</code> 插件</h2><p>打开bash，在hexo根目录下运行</p><pre class=" language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-generator-feed --save</code></pre><h2 id="配置yaml"><a href="#配置yaml" class="headerlink" title="配置yaml"></a>配置yaml</h2><p>打开hexo根目录下的<code>_config.yml</code>，添加如下代码</p><pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># Extensions</span><span class="token key atrule">plugins</span><span class="token punctuation">:</span>  hexo<span class="token punctuation">-</span>generator<span class="token punctuation">-</span>feed<span class="token comment" spellcheck="true">#Feed Atom</span><span class="token key atrule">feed</span><span class="token punctuation">:</span>  <span class="token key atrule">type</span><span class="token punctuation">:</span> atom  <span class="token key atrule">path</span><span class="token punctuation">:</span> atom.xml  <span class="token key atrule">limit</span><span class="token punctuation">:</span> <span class="token number">20</span>  <span class="token key atrule">hub</span><span class="token punctuation">:</span>  <span class="token key atrule">content</span><span class="token punctuation">:</span>  <span class="token key atrule">content_limit</span><span class="token punctuation">:</span> <span class="token number">140</span>  <span class="token key atrule">content_limit_delim</span><span class="token punctuation">:</span> <span class="token string">' '</span>  <span class="token key atrule">order_by</span><span class="token punctuation">:</span> <span class="token punctuation">-</span>date</code></pre><p>参数说明<br>type: RSS的类型，默认是atom<br>path: 文件路径,默认是atom.xml<br>limit: 展示文章的数量</p><p>详见<a href="https://github.com/hexojs/hexo-generator-feed#options">https://github.com/hexojs/hexo-generator-feed#options</a></p><p>打开hexo主题目录下的<code>_config.yml</code>，添加如下代码</p><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">rss</span><span class="token punctuation">:</span> /atom.xml</code></pre><p><font color=#008000 >注意：部分主题无需此步，请参考所用主题介绍文档，并启用rss订阅图标</font></p><p>在bash输入<code>hexo clean &amp;&amp; hexo g</code>后生成订阅文件，完成。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> rss </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>自我介绍</title>
       <link href="/2022/04/08/introduction/"/>
       <url>/2022/04/08/introduction/</url>
