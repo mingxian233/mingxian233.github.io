@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>C++语言学习笔记-入门篇（一）</title>
+      <link href="/2024/01/12/cppnotes1-1/"/>
+      <url>/2024/01/12/cppnotes1-1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-语言学习笔记-入门篇（一）"><a href="#C-语言学习笔记-入门篇（一）" class="headerlink" title="C++语言学习笔记-入门篇（一）"></a>C++语言学习笔记-入门篇（一）</h1><hr><h2 id="输出“Hello-World”"><a href="#输出“Hello-World”" class="headerlink" title="输出“Hello World”"></a>输出“Hello World”</h2><p>  任何计算机语言的学习都始于输出这个字符串，直接上代码</p><pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">#include &lt;iostream&gt;using namespace std;int main()&#123;    cout&lt;&lt;&quot;Hello World&quot;&lt;&lt;endl;    return 0;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><code>#include &lt;iostream&gt;</code>是一个<strong>预处理命令</strong>，在开始编译前运行，在C&#x2F;C++中需要放在源文件首部，此处的含义为包含了<code>iostream</code>(输入输出流)头文件,<code>std::cout</code>和<code>std::cin</code>的声明和函数体就包含在这个头文件中，“头文件”概念在C和C++中均有使用，<code>&lt;iostream&gt;</code>表示在系统库中查找，<code>&quot;iostream&quot;</code>则是在所有文件中查找。</p><p><code>using namespace std;</code>是一条<strong>语句</strong>，作用为使用<strong>命名空间</strong>std，一条语句需要包含一个<code>;</code></p><p><code>int main()&#123;&#125;</code>是定义了<strong>主函数</strong><code>main</code>，一个C++程序必须包含一个主函数<code>main</code>，主函数是无参的，圆括号内是<strong>函数的参数</strong>，花括号里面是<strong>函数体</strong></p><p><code>cout&lt;&lt;&quot;Hello World&quot;&lt;&lt;endl;</code>是一条语句，&lt;&lt;符号表示把字符串“Hello World！”发送给cout打印，endl是控制符，表示重启一行(\n)，确保程序在继续运行前立即刷新输出，与其说程序显示了一条消息不如说它将一个字符串插入到了输出流中，从概念上看，输出是一个流，可以理解为从程序中流出的一系列字符，cout对象表示这种流，在iostream文件中定义，cout右边的&lt;&lt;符号是插入运算符，可以将右侧信息插入流中。</p><p><code>return 0</code>表示在程序结束后向用户返回一个值0</p><h2 id="C-的编译与执行"><a href="#C-的编译与执行" class="headerlink" title="C++的编译与执行"></a>C++的编译与执行</h2><p><strong>预处理器处理所有的预处理指令</strong>： 将所有的#include头文件的完整内容复制到.cpp文件中<br><strong>编译器把每个.cpp文件（源文件）转换为.o或者.obj文件（对象文件）</strong>： 包含了源文件内容对应的机器码<br>链接程序把程序的.obj文件合并到包含完整可执行程序的文件中（.exe）</p><h2 id="C-的代码规范"><a href="#C-的代码规范" class="headerlink" title="C++的代码规范"></a>C++的代码规范</h2><ul><li>每条语句占一行</li><li>每个函数都有一个开始和结束花括号，花括号各占一行，函数中的语句相对于花括号进行缩进</li><li>与函数名称相关的小括号周围没有空白</li><li>养成书写注释的好习惯，有助于代码阅读，&#x2F;&#x2F;为单行注释（注意，C99之前的C语言中不可使用&#x2F;&#x2F;单行注释），&#x2F;<em>注释内容</em>&#x2F;为多行注释</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日常 </tag>
+            
+            <tag> 问候 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>好久不见</title>
       <link href="/2023/11/07/longtimenosee/"/>
       <url>/2023/11/07/longtimenosee/</url>
