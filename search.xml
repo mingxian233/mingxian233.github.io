@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>C++语言学习笔记-入门篇（二）</title>
+      <link href="/2024/03/23/cppnotes1-2/"/>
+      <url>/2024/03/23/cppnotes1-2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-语言学习笔记-入门篇（二）"><a href="#C-语言学习笔记-入门篇（二）" class="headerlink" title="C++语言学习笔记-入门篇（二）"></a>C++语言学习笔记-入门篇（二）</h1><hr><p>##顺序结构<br>顾名思义，顺序结构就是按照线性顺序执行代码，是面向过程的程序设计中最直观简洁的控制结构，下面给出一个简易的程序实例</p><pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">#include &lt;iostream&gt;using namespace std;int main()&#123;    int a,b;    cout&lt;&lt;&quot;输入两个数a,b：&quot;&lt;&lt;endl;    cin&gt;&gt;a&gt;&gt;b;    cout&lt;&lt;&quot;a+b&#x3D;&quot;&lt;&lt;a+b&lt;&lt;endl;    return 0&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>##选择结构<br>选择结构，即程序按照某个条件执行（出口只有一个）<br>###if条件语句<br>以<code>if(condition)&#123;&#125;else if(condition)&#123;&#125;else&#123;&#125;</code>组成，可以根据语义理解，下面给出一个程序实例</p><pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">#include &lt;iostream&gt;using namespace std;int main()&#123;    int a;    cout&lt;&lt;&quot;输入一个整数&quot;&lt;&lt;endl;    cin&gt;&gt;a;    if(a &lt; 0) cout&lt;&lt;&quot;a是负数&quot;&lt;&lt;endl;    else if(a &#x3D;&#x3D; 0) cout &lt;&lt; &quot;a&#x3D;0&quot;&lt;&lt;endl;    else cout &lt;&lt; &quot;a是正数&quot; &lt;&lt; endl;    return 0;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>###switch条件语句<br>以<code>switch(var)&#123;&#125;case A: ;case B: ;... default: N;</code>组成，下面给出一个程序实例</p><pre><code class="C++">#include &lt;iostream&gt;using namespace std;int main()&#123;    int a;    cout&lt;&lt;&quot;你今天要干什么，若睡觉输入1，学习输入2&quot;&lt;&lt;endl;    cin&gt;&gt;a;    switch(a)&#123;        case 1: cout&lt;&lt;&quot;你怎么睡得着的，你这个年龄段，还睡得着觉，有点出息没有！&quot;&lt;&lt;endl;break;        case 2: cout&lt;&lt;&quot;学个p，咱老李不学习也会打仗&quot;&lt;&lt;endl;break;        default: cout&lt;&lt;&quot;Error!&quot;&lt;&lt;endl;    &#125;    return 0;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 程序设计 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C++语言学习笔记-入门篇（一）</title>
       <link href="/2024/01/12/cppnotes1-1/"/>
       <url>/2024/01/12/cppnotes1-1/</url>
